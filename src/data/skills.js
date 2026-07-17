@@ -1,0 +1,32 @@
+const skillsData = {
+  programming: [
+    "Python",
+    "SQL",
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ],
+
+  machineLearning: [
+    "Scikit-learn",
+    "TensorFlow",
+    "Regression",
+    "Classification",
+  ],
+
+  dataAnalysis: [
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Jupyter Notebook",
+  ],
+};
+
+export default skillsData;
