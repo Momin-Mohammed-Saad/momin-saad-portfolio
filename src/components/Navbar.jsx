@@ -1,22 +1,35 @@
 function Navbar() {
+  const navLinks = [
+    "Home",
+    "About",
+    "Skills",
+    "Projects",
+    "Experience",
+    "Education",
+    "Contact",
+  ];
+
   return (
-    <nav className="w-full">
+    <nav className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-white">
-          {"<Your Name />"}
+        <h1 className="text-2xl font-bold text-blue-400">
+          {"<Momin Saad />"}
         </h1>
 
-        {/* Navigation Links */}
-        <ul className="hidden md:flex items-center gap-8 text-gray-300">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Contact</a></li>
+        {/* Navigation */}
+        <ul className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <li key={link}>
+              <a
+                href="#"
+                className="text-gray-300 transition duration-300 hover:text-blue-400"
+              >
+                {link}
+              </a>
+            </li>
+          ))}
         </ul>
 
       </div>
