@@ -2,7 +2,7 @@ import aboutData from "../data/about";
 
 function About() {
   return (
-    <section
+    <section 
       id="about"
       className="mx-auto max-w-7xl px-6 py-24 text-white"
     >

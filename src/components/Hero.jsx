@@ -5,7 +5,9 @@ import { MdEmail } from "react-icons/md";
 
 function Hero() {
   return (
-    <section className="min-h-[90vh] flex items-center">
+    <section 
+    id="home"
+    className="min-h-[90vh] flex items-center">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
         {/* Left Section */}
         <div>
