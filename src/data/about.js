@@ -2,13 +2,13 @@ const aboutData = {
   title: "About Me",
 
   introduction:
-    "I am an aspiring Data Scientist and Machine Learning Engineer passionate about solving real-world problems using data. I enjoy building predictive models, analyzing datasets, and creating intelligent solutions through machine learning.",
+    "I am a Computer Engineering graduate with a strong interest in Data Science, Machine Learning, Generative AI, and Agentic AI. I enjoy working with data, building machine learning models, and developing intelligent solutions that address real-world problems.",
 
   objective:
-    "My goal is to contribute to innovative AI-driven projects while continuously improving my skills in Data Science, Machine Learning, and Software Development.",
+    "My goal is to grow as a Data Science and AI professional while contributing to impactful projects. I am continuously strengthening my skills in data analysis, machine learning, software development, and modern AI technologies.",
 
   highlights: [
-    "4+ Machine Learning Projects",
+    "4+ ML Projects",
     "Python",
     "SQL",
     "Data Analysis",

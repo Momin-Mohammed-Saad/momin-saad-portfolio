@@ -26,6 +26,7 @@ const skillsData = {
     "GitHub",
     "VS Code",
     "Jupyter Notebook",
+    "Google Colab",
   ],
 };
 
