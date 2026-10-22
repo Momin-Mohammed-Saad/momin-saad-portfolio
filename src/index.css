@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-/* ================================
-   Global Theme
-================================ */
+/* Global color */
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +10,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background-color: #18181b;
+  background-color: #18181B;
   color: #f8fafc;
   font-family:
     Inter,
@@ -25,18 +23,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* ================================
-   Text Selection
-================================ */
+   /* Text Selection */
 
 ::selection {
   background-color: #3b82f6;
   color: #f8fafc;
 }
 
-/* ================================
    Scrollbar
-================================ */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -55,9 +49,8 @@ body {
   background: #3b82f6;
 }
 
-/* ================================
-   Animations
-================================ */
+
+   /* Animations */
 
 @keyframes fadeUp {
   from {
@@ -103,10 +96,8 @@ body {
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
-
-/* ================================
-   Accessibility
-================================ */
+ 
+/* Accessibility */
 
 @media (prefers-reduced-motion: reduce) {
   html {
