@@ -8,7 +8,7 @@ const heroData = {
   description:
     "Computer Engineering graduate passionate about Data Science, Machine Learning, Generative AI, and building intelligent agentic systems.",
 
-  resume: "/resume.pdf",
+  resume: "/resume/resume.pdf",
 
   buttons: {
     resume: "Download Resume",
@@ -16,9 +16,9 @@ const heroData = {
   },
 
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    email: "mailto:your@email.com"
+    github: "https://github.com/Momin-Mohammed-Saad",
+    linkedin: "https://linkedin.com/in/momin-mohammed-saad-780308377",
+    email: "mailto:saadsiddiqui7103@gmail.com"
   },
 
   techStack: [

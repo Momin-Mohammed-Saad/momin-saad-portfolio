@@ -6,11 +6,11 @@ const contactData = {
 
   email: "saadsiddiqui7103@gmail.com",
 
-  github: "https://github.com",
+ github: "https://github.com/Momin-Mohammed-Saad",
+ 
+  linkedin: "www.linkedin.com/in/momin-mohammed-saad-780308377",
 
-  linkedin: "https://linkedin.com/in/momin-mohammed-saad-780308377",
-
-  resume: "/resume.pdf",
+  resume: "/resume/resume.pdf",
 
   location: "Nashik, Maharashtra, India",
 

@@ -1,7 +1,9 @@
 import projectsData from "../data/projects";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useState } from "react";
 
 function Projects() {
+  const [activeImages, setActiveImages] = useState({});
   return (
     <section
       id="projects"
@@ -32,25 +34,73 @@ function Projects() {
             key={project.id}
             className="group overflow-hidden rounded-2xl border border-slate-800 bg-[#0F172A]/70 shadow-lg shadow-black/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/10"
           >
-            {/* Project Image */}
-            <div className="relative h-52 overflow-hidden bg-[#18181B]">
-              {project.image ? (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              ) : (
-                <div className="flex h-full items-center justify-center">
-                  <span className="text-sm font-medium uppercase tracking-wider text-slate-600">
-                    Project Preview
-                  </span>
+      {/* Project Image Carousel */}
+      <div className="relative aspect-video overflow-hidden bg-[#0F172A]">
+        {(() => {
+          const images = project.images || (project.image ? [project.image] : []);
+          const activeIndex = activeImages[project.id] || 0;
+          
+          if (images.length === 0) {
+            return (
+              <div className="flex h-full items-center justify-center text-sm text-slate-500">
+                Project Preview
+              </div>
+            );
+          }
+          
+          return (
+          <>
+            <img
+              key={images[activeIndex]}
+              src={images[activeIndex]}
+              alt={`${project.title} screenshot ${activeIndex + 1}`}
+              loading="lazy"
+              onError={(e) => {
+                console.error("Failed to load image:", e.currentTarget.src);
+              }}
+              className="h-full w-full object-cover"
+            />
+            {images.length > 1 && (
+              <>
+                <button
+                  type="button"
+                aria-label="Previous image"
+                onClick={() =>
+                  setActiveImages((prev) => ({
+                    ...prev,
+                    [project.id]:
+                      (activeIndex - 1 + images.length) % images.length,
+                    }))
+                  }
+                  className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/70 px-3 py-2 text-white hover:bg-blue-600"
+                >
+                  &#10094;
+                </button>
+                
+                <button
+                  type="button"
+                  aria-label="Next image"
+                  onClick={() =>
+                    setActiveImages((prev) => ({
+                      ...prev,
+                      [project.id]: (activeIndex + 1) % images.length,
+                    }))
+                  }
+                  className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/70 px-3 py-2 text-white hover:bg-blue-600"
+                >
+                  &#10095;
+                </button>
+                
+                <div className="absolute bottom-3 right-3 rounded-md bg-black/70 px-3 py-1 text-xs text-white">
+                  {activeIndex + 1} / {images.length}
                 </div>
-              )}
+              </>
+            )}
+          </>
+        );
+      })()}
+    </div>
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            </div>
 
             {/* Project Content */}
             <div className="p-6">
