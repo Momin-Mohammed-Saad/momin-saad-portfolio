@@ -15,7 +15,7 @@ function Hero() {
 
       <div className="mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center gap-12 px-6 py-20 md:grid-cols-2 lg:px-8">
 
-        {/* ================= LEFT SECTION ================= */}
+        {/* LEFT SECTION */}
         <div className="text-center md:text-left">
 
           {/* Greeting */}
@@ -65,7 +65,7 @@ function Hero() {
 
           </div>
 
-          {/* ================= SOCIAL LINKS ================= */}
+          {/* SOCIAL LINKS */}
           <div className="mt-8 flex items-center justify-center gap-6 md:justify-start">
 
             {/* GitHub */}
@@ -93,7 +93,7 @@ function Hero() {
             {/* Email */}
             <a
               href={heroData.social.email}
-              aria-label="Email"
+              aria-label="Send me an email"
               className="text-2xl text-slate-400 transition duration-300 hover:-translate-y-1 hover:text-blue-400"
             >
               <MdEmail />
@@ -101,7 +101,7 @@ function Hero() {
 
           </div>
 
-          {/* ================= TECH STACK ================= */}
+          {/* TECH STACK */}
           <div className="mt-8 flex flex-wrap justify-center gap-2 md:justify-start">
             {heroData.techStack.map((tech) => (
               <span
@@ -115,7 +115,7 @@ function Hero() {
 
         </div>
 
-        {/* ================= RIGHT SECTION ================= */}
+        {/* RIGHT SECTION */}
         <div className="flex justify-center -translate-y-12">
 
           <div className="relative">

@@ -1,10 +1,10 @@
 const certificationsData = [
   {
     id: 1,
-    title: "Python Essentials 1",
-    issuer: "Cisco",
+    title: "Flipkart Order Issue Resolution & Customer Support Analytics",
+    issuer: "AlmaBetter",
     year: "2026",
-    link: "/certificates/python-essentials-1.pdf",
+    link: "/certificates/flipkart.pdf",
   },
 
   {

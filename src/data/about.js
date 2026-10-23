@@ -10,7 +10,7 @@ const aboutData = {
   highlights: [
     "4+ ML Projects",
     "Python",
-    "SQL",
+    "PostgreSQL",
     "Data Analysis",
     "Machine Learning",
     "Scikit-learn",

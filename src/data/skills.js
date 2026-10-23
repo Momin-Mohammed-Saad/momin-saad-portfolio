@@ -1,7 +1,7 @@
 const skillsData = {
   programming: [
     "Python",
-    "SQL",
+    "PostgreSQL",
     "HTML",
     "CSS",
     "JavaScript",

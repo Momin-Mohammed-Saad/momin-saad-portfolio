@@ -18,12 +18,12 @@ const heroData = {
   social: {
     github: "https://github.com/Momin-Mohammed-Saad",
     linkedin: "https://linkedin.com/in/momin-mohammed-saad-780308377",
-    email: "mailto:saadsiddiqui7103@gmail.com"
+    email: "mailto:saadsiddiqui7103@gmail.com",
   },
 
   techStack: [
     "Python",
-    "SQL",
+    "PostgreSQL",
     "Pandas",
     "NumPy",
     "Scikit-learn",

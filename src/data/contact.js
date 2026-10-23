@@ -8,7 +8,7 @@ const contactData = {
 
  github: "https://github.com/Momin-Mohammed-Saad",
  
-  linkedin: "www.linkedin.com/in/momin-mohammed-saad-780308377",
+  linkedin: "https://linkedin.com/in/momin-mohammed-saad-780308377",
 
   resume: "/resume/resume.pdf",
 

@@ -3,11 +3,13 @@ import certificationsData from "../data/certifications";
 import ciscoLogo from "../assets/icons/cisco.png";
 import ibmLogo from "../assets/icons/ibm.png";
 import relianceLogo from "../assets/icons/reliance.png";
+import almabetterlogo from "../assets/icons/AlmaBetter.jpeg"
 
 const logos = {
   Cisco: ciscoLogo,
   IBM: ibmLogo,
   "Reliance Foundation": relianceLogo,
+  "AlmaBetter" : almabetterlogo,
 };
 
 function Certifications() {
@@ -27,6 +29,10 @@ function Certifications() {
         </h2>
 
         <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-blue-500" />
+
+        <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-400">
+          Professional certifications and milestones reflecting my learning and growth in Data Science Machine Learning, and AI.
+        </p>
       </div>
 
       {/* Certifications Grid */}
