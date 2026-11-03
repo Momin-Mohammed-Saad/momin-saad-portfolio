@@ -3,10 +3,11 @@ const contactData = {
 
   description:
     "I'm open to internships, entry-level opportunities, and projects related to Data Science, Machine Learning, Generative AI, and Agentic AI.",
-
+  
+  
   email: "saadsiddiqui7103@gmail.com",
-
- github: "https://github.com/Momin-Mohammed-Saad",
+  
+  github: "https://github.com/Momin-Mohammed-Saad",
  
   linkedin: "https://linkedin.com/in/momin-mohammed-saad-780308377",
 
